@@ -1,2 +1,30 @@
 mixin header()
-  +b.HEADER header
+   +b.HEADER.header
+      +e.row.container
+         +e.logo
+            img.header__img(src="../../assets/images/logo.png", alt="logo")
+         +b.burger-btn
+            +e.SPAN.line
+            +e.SPAN.line
+         +b.menu-nav
+            +b.burger-close
+               +e.SPAN.line
+               +e.SPAN.line
+            +b.UL.burger-list
+               +e.LI.burger-item
+                  a.burger-link(href='index.html') About company
+               +e.LI.burger-item
+                  a.burger-link(href='services.html') Services
+               +e.LI.burger-item
+                  a.burger-link(href='work.html') How we work
+               +e.LI.burger-item
+                  a.burger-link(href='contacts.html') Contact us
+         +b.UL.menu-list
+            +e.LI.item
+               a.menu-list__link(href='index.html') About company
+            +e.LI.item
+               a.menu-list__link(href='services.html') Services
+            +e.LI.item
+               a.menu-list__link(href='work.html') How we work
+            +e.LI.item
+               a.menu-list__link(href='contacts.html') Contact us

@@ -1,0 +1,91 @@
+
+.text-block
+   margin-bottom 21px
+   margin-right 15px
+
+   &:last-child
+      margin-bottom 0
+
+   &__text
+      color #343434
+      font-family Tahoma,Arial,sans-serif
+      line-height 24px
+      font-size 13px
+
+   &__link
+      color #BC0000
+      text-decoration underline
+      font-family Tahoma, Arial, sans-serif
+      font-size 13px
+      margin-bottom 5px
+      display inline-block
+
+      &:hover
+         text-decoration none
+
+   &__sub-title
+      font-family "Trebuchet MS", Arial, Helvetica, sans-serif
+      font-size 20px
+      line-height 30px
+      color #BC0000
+
+      &--black
+         color #343434
+         font-family Tahoma, Arial, sans-serif
+         font-size 13px
+         line-height 24px
+         padding-right 15px
+
+.card
+
+   &__item
+      width 100%
+      min-width 290px
+      background-color #a80000
+      margin-bottom 17px
+      display flex
+      flex-direction column
+      align-items center
+      padding 40px 20px
+      text-align center
+
+   &__link
+      color #fc0
+      font-family Tahoma, Arial, sans-serif
+      font-size 13px
+      text-decoration underline
+      padding-bottom 10px
+      padding-top 10px
+
+      &:hover
+         text-decoration none
+
+   &__text
+      color #fff
+      font-family Tahoma, Arial, sans-serif
+      font-size 13px
+
+.about
+
+   &__content
+      margin-bottom 40px
+
+   &__row
+      display flex
+      justify-content space-between
+
+   &__title
+      font-family "Trebuchet MS", Arial, Helvetica, sans-serif
+      font-size 28px
+      color #BC0000
+      margin-bottom 20px
+
+@media screen and (max-width: 767px)
+   .about
+
+      &__row
+         flex-direction column
+
+   .card
+      min-width 250px
+      width 100%

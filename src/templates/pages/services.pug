@@ -1,0 +1,73 @@
+extends ../layouts/main
+
+block content
+
+   +b.HEADER.header
+      +e.row.container
+         +e.logo
+            img.header__img(src="../../assets/images/logo.png", alt="logo")
+         +b.burger-btn
+            +e.SPAN.line
+            +e.SPAN.line
+         +b.menu-nav
+            +b.burger-close
+               +e.SPAN.line
+               +e.SPAN.line
+            +b.UL.burger-list
+               +e.LI.burger-item
+                  a.burger-link(href='index.html') About company
+               +e.LI.burger-item
+                  a.burger-link.active(href='services.html') Services
+               +e.LI.burger-item
+                  a.burger-link(href='work.html') How we work
+               +e.LI.burger-item
+                  a.burger-link(href='contacts.html') Contact us
+         +b.UL.menu-list
+            +e.LI.item
+               a.menu-list__link(href='index.html') About company
+            +e.LI.item
+               a.menu-list__link.active(href='services.html') Services
+            +e.LI.item
+               a.menu-list__link(href='work.html') How we work
+            +e.LI.item
+               a.menu-list__link(href='contacts.html') Contact us
+   .page
+      +b.banner
+         +e.row.container
+            +e.content
+               +e.images-pc
+                  img(src="../../assets/images/comp.png", alt="pc")
+               +e.UL.list
+                  +e.LI.item-text Web Development
+                  +e.LI.item-text Software Development
+                  +e.LI.item-text Quality Assurance
+                  +e.LI.item-text Web Design
+      +b.about.services
+         +e.row.container
+            +e.content
+               +e.title Services available
+               +b.text-block
+                  +e.text <strong>AT Group Systems</strong> provides development services and application life circle support in the following area:
+                  +e.text <strong>Software development.</strong> Requirements analyses, development, management, quality assurance, and code review.
+                  +e.text <strong>Web design and development.</strong> Design, development, web services, HTML Mark Up.
+                  +e.text <strong>Quality Assurance.</strong> Automated test scripts, load stress testing, manual testing.
+                  +e.text <strong>Offshore Development</strong> Center at our office - your remote development center with qualified team of developers working exclusively on your projects. It is optimal way to establish your own software development department <strong>at most effective cost.</strong> You pay only for what you use - IT infrastructure, scalable technology resources, office administration - and no extra expenses.
+               +b.text-block
+                  +e.sub-title--black <strong>Available resources:</strong>
+                  +e.text PHP developers
+                  +e.text .Net developers
+                  +e.text HTML/JS developers
+                  +e.text QA - manual testing, automated testing
+                  +e.text Project managers
+               +b.text-block
+                  +e.text Additional resources can be added on request.
+            +b.card
+               +e.item
+                  a.card__link(href='services.html') .Net Development
+                  +e.text CRM, Document Managment Systems, Web applications and Web Services
+               +e.item
+                  a.card__link(href='services.html') Microsoft Reporting Services
+                  +e.text Solid platform for reporting in your application
+               +e.item
+                  a.card__link(href='services.html') PHP MySql development
+                  +e.text EComerce Platforms, Online Stores, Corparate and personal websites

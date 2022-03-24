@@ -1,0 +1,159 @@
+.header
+   margin-left 20px
+   margin-right 20px
+
+   &__row
+      display flex
+      position relative
+
+   .container
+      margin-top 43px
+      margin-bottom 43px
+
+   &__logo
+      max-width 200px
+
+   &__img
+      height 63px
+
+   .menu-list
+      display flex
+      align-items center
+      justify-content flex-end
+      width 100%
+      margin-bottom 0px
+
+      &__item
+         transition all 0.3s ease
+
+      &__link
+         color #343434
+         text-decoration none
+         padding 19px 16px
+
+         &:hover
+            text-decoration underline
+      
+      .active
+         background-color rgb(209, 209, 209)
+
+.burger-btn
+.burger-close
+
+   &__line
+      width 30px
+      height 5px
+      position absolute
+      background-color #202924
+      transition all 0.3s ease
+      top 12px
+      right 5px
+
+      &:last-child
+         right 5px
+         top 25px
+
+.burger-list
+   display flex
+   justify-content space-between
+
+   &__burger-item
+
+      &:hover
+         opacity 0.7
+
+      .active
+         background-color rgb(209, 209, 209)
+
+.burger-close__line
+.burger-btn
+.burger-list
+   display none
+
+.burger-link
+   font-size 16px
+   color #202925
+   margin 0px 40px 10px 0px
+   transition all 0.3s ease
+   width 100%
+
+   &:last-child
+      margin 0
+
+@media screen and (max-width: 767px)
+   .header
+      margin-right 10px
+      margin-left 10px
+
+      &__row
+         align-items center
+         justify-content space-between
+
+      .container
+         margin-top 15px
+         margin-bottom 15px
+
+      .burger-btn
+         position relative
+         width 40px
+         height 40px
+         margin-left 30px
+
+      .menu-list
+         display none
+
+      .js-is-active
+
+      &:last-child
+         height 100%
+         position fixed
+         right 0
+         top 0
+         background-color #f2f3f7
+         transition all 0.3s ease
+         z-index 30
+
+   .burger-btn
+      display block
+
+   .burger-close
+      position absolute
+      top 35px
+      right 10px
+      width 40px
+      height 40px
+
+      &__line
+         transform translateY(0px) rotate(125deg)
+         transition all 0.2s ease
+         display block
+
+         &:last-child
+            transform translateY(-12px) rotate(55deg)
+            transition all 0.2s ease
+
+   .menu-nav
+      width 80%
+      height 100%
+      position fixed
+      right -100%
+      top 0
+      background-color #f2f3f7
+      transition all 0.3s ease
+      z-index 30
+      display flex
+      flex-direction column
+      overflow-y scroll
+      padding 90px 20px 40px 40px
+
+      .burger-list
+         display block
+         margin 0
+
+         .burger-link
+            font-size 24px
+            line-height 136.4%
+            color #202925
+            display inline-block
+            padding-top 10px
+            padding-bottom 10px

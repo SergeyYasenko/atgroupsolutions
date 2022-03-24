@@ -1,2 +1,2 @@
-"use strict";
+"use strict";var fullScreenInfoRow=document.querySelector(".main-content"),fullScreenInfo=document.querySelector(".menu-nav"),burgerMenu=document.querySelector(".burger-btn"),burgerMenuClose=document.querySelector(".burger-close");burgerMenu&&burgerMenu.addEventListener("click",function(e){document.body.classList.add("js-lock"),fullScreenInfoRow.classList.add("js-is-active"),fullScreenInfo.classList.add("js-is-active")}),burgerMenuClose&&burgerMenuClose.addEventListener("click",function(e){document.body.classList.remove("js-lock"),fullScreenInfoRow.classList.remove("js-is-active"),fullScreenInfo.classList.remove("js-is-active")});
 //# sourceMappingURL=build.js.map
